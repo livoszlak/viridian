@@ -3,21 +3,29 @@
   --font-color: #000000;
 }
 
-h1 {
+.headline {
   font-family: "Raleway", sans-serif;
   font-size: 32px;
   font-style: normal;
   font-weight: 300;
   line-height: normal;
   text-transform: uppercase;
+  margin: 0px;
 }
 
-h6 {
+.subheader {
   font-family: "Raleway", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  margin: 0px;
+}
+
+.call-to-action {
+  margin-top: 275px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 p {
@@ -43,6 +51,21 @@ button {
   font-weight: 300;
   line-height: normal;
   text-transform: uppercase;
+  color: #fff;
+}
+.bike-btn {
+  position: absolute;
+  bottom: 49px;
+  right: 24px;
+  z-index: 2;
+}
+
+.acc-btn {
+  margin-top: 24px;
+  margin-left: 24px;
+}
+.about-btn {
+  margin-left: 24px;
 }
 
 .footer > p {
@@ -59,9 +82,7 @@ button {
   background: linear-gradient(180deg, #fff 2.55%, #3c3c3c 99.9%);
 }
 
-.end > h6 {
-  leading-trim: both;
-  text-edge: cap;
+.end > .subheader {
   font-family: "Raleway", sans-serif;
   font-weight: 300;
 }
@@ -84,20 +105,78 @@ main {
   height: 1000px;
   width: 100%;
   background: linear-gradient(180deg, #3c3c3c 0%, #fff 100%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 80px;
+  gap: 513px;
 }
 
 .menu {
-  padding-top: 80px;
   display: flex;
-  align-items: baseline;
-  justify-content: space-around;
-  /* eller space between */
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding-left: 24px;
+  padding-right: 24px;
+  width: 100vw;
 }
 .hero-text {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  z-index: 3;
+  gap: 8px;
+}
+
+.info {
+  margin-top: 60px;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+
+.engine {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  margin-left: 90px;
+}
+
+.about-us {
+  margin-top: 309px;
+  margin-left: 24px;
+}
+.about-us-description {
+  margin-left: 24px;
+  margin-right: 24px;
+}
+footer {
+  margin-top: 250px;
+}
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 24px;
+  margin-right: 24px;
+}
+.footer-links > p {
+  margin: 0px;
+}
+.social-links {
+  display: flex;
+  flex-direction: column;
+  gap: 19px;
+}
+.end {
+  display: flex;
+  flex-direction: row;
+  align-items: baseline;
+  justify-content: space-between;
+  margin-top: 24px;
+  margin-left: 24px;
+  margin-right: 24px;
 }
 
 .newsletter {
@@ -105,4 +184,39 @@ main {
   height: 342px;
   flex-shrink: 0;
   background: #d9d9d9;
+}
+
+.placeholder-bike {
+  height: 1000px;
+  width: 100vw;
+  background-color: #747272;
+  margin-top: 216px;
+  position: relative;
+}
+
+.placeholder-acc {
+  height: 300px;
+  width: 300px;
+  background-color: #747272;
+  margin-top: 227px;
+}
+
+.placeholder-bike-xtra {
+  height: 1000px;
+  width: 100vw;
+  background-color: #747272;
+  margin-top: 395px;
+  position: relative;
+}
+.blurb {
+  position: absolute;
+  bottom: 42px;
+  left: 24px;
+  width: 252px;
+}
+.engine-img {
+  width: 300px;
+  height: 300px;
+  background-color: #747272;
+  margin-top: 249px;
 }
