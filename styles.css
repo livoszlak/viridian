@@ -6,14 +6,32 @@
 * {
   box-sizing: border-box;
 }
-
 body {
   margin: 0;
-  display: flex;
 }
 
-.header {
+main {
+  margin: 0px;
+  padding: 0px;
+  display: flex;
+  flex-direction: column;
+}
+
+.gradient {
   height: 1000px;
   width: 100%;
   background: linear-gradient(180deg, #6ac73f 0%, #fff 100%);
+}
+.menu {
+  padding-top: 80px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+  /* eller space between */
+}
+.hero-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
