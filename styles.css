@@ -2,6 +2,10 @@
   --bg-color: #ffffff;
   --font-color: #000000;
 }
+.side-margin {
+  margin-left: 24px;
+  margin-right: 24px;
+}
 
 .headline {
   font-family: "Raleway", sans-serif;
@@ -24,8 +28,6 @@
 
 .call-to-action {
   margin-top: 275px;
-  margin-left: 24px;
-  margin-right: 24px;
 }
 
 p {
@@ -37,14 +39,15 @@ p {
 }
 
 button {
+  padding-left: 26px;
+  padding-right: 26px;
+  height: 32px;
   border-radius: 50px;
   background: #3c3c3c;
   display: flex;
-  height: 32px;
-  padding: 11px 26px;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 4px;
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -62,13 +65,9 @@ button {
 
 .acc-btn {
   margin-top: 24px;
-  margin-left: 24px;
-}
-.about-btn {
-  margin-left: 24px;
 }
 
-.footer > p {
+footer > p {
   font-family: "IBM Plex Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
@@ -82,9 +81,9 @@ button {
   background: linear-gradient(180deg, #fff 2.55%, #3c3c3c 99.9%);
 }
 
-.end > .subheader {
-  font-family: "Raleway", sans-serif;
+.end > div > .subheader {
   font-weight: 300;
+  font-size: 16px;
 }
 
 * {
@@ -117,10 +116,11 @@ main {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  width: 100vw;
   padding-left: 24px;
   padding-right: 24px;
-  width: 100vw;
 }
+
 .hero-text {
   display: flex;
   flex-direction: column;
@@ -132,8 +132,10 @@ main {
 
 .info {
   margin-top: 60px;
-  margin-left: 24px;
-  margin-right: 24px;
+}
+
+.info > p {
+  max-width: 560px;
 }
 
 .engine {
@@ -143,14 +145,14 @@ main {
   margin-left: 90px;
 }
 
+.engine > p {
+  max-width: 300px;
+}
+
 .about-us {
   margin-top: 309px;
-  margin-left: 24px;
 }
-.about-us-description {
-  margin-left: 24px;
-  margin-right: 24px;
-}
+
 footer {
   margin-top: 250px;
 }
@@ -158,8 +160,6 @@ footer {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  margin-left: 24px;
-  margin-right: 24px;
 }
 .footer-links > p {
   margin: 0px;
@@ -175,10 +175,7 @@ footer {
   align-items: baseline;
   justify-content: space-between;
   margin-top: 24px;
-  margin-left: 24px;
-  margin-right: 24px;
 }
-
 .newsletter {
   width: 342px;
   height: 342px;
@@ -219,4 +216,37 @@ footer {
   height: 300px;
   background-color: #747272;
   margin-top: 249px;
+}
+
+@media screen and (min-width: 1000px) {
+  .side-margin {
+    margin-left: 108px;
+    margin-right: 108px;
+  }
+  .headline {
+    font-size: 64px;
+  }
+  .subheader {
+    font-size: 18px;
+  }
+  p {
+    font-size: 18px;
+  }
+  button {
+    height: 48px;
+    width: 175px;
+    font-size: 24px;
+    padding-left: 41px;
+    padding-right: 41px;
+  }
+  .about-btn {
+    padding: 0;
+  }
+  footer > p {
+    font-size: 18px;
+    line-height: 28px;
+  }
+  .end > div > .subheader {
+    font-size: 18px;
+  }
 }
