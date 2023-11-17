@@ -1,6 +1,9 @@
 :root {
   --bg-color: #ffffff;
   --font-color: #000000;
+  --gradient-color: #b4ad95;
+  --btn-green: #b1ff97;
+  --btn-orange: #d34323;
 }
 .side-margin {
   margin-left: 24px;
@@ -36,6 +39,8 @@ p {
   font-style: normal;
   font-weight: 400;
   line-height: 23px;
+  transition: all 400ms;
+  transition-delay: 100ms;
 }
 
 button {
@@ -43,7 +48,6 @@ button {
   padding-right: 26px;
   height: 32px;
   border-radius: 50px;
-  background: #3c3c3c;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -54,8 +58,31 @@ button {
   font-weight: 300;
   line-height: normal;
   text-transform: uppercase;
-  color: #fff;
+  border: none;
 }
+.btn-green {
+  background-color: var(--btn-green);
+  color: var(--font-color);
+  transition: all 400ms;
+  transition-delay: 100ms;
+}
+.btn-green:hover {
+  background-color: var(--btn-orange);
+  color: var(--bg-color);
+  transition: all 400ms;
+}
+.btn-orange {
+  background-color: var(--btn-orange);
+  color: var(--bg-color);
+  transition: all 400ms;
+  transition-delay: 100ms;
+}
+.btn-orange:hover {
+  background-color: var(--btn-green);
+  color: var(--font-color);
+  transition: all 400ms;
+}
+
 .bike-btn {
   position: absolute;
   bottom: 49px;
@@ -78,7 +105,7 @@ footer > p {
 .footer-gradient {
   height: 500px;
   width: 100%;
-  background: linear-gradient(180deg, #fff 2.55%, #3c3c3c 99.9%);
+  background: linear-gradient(180deg, #fff 2.55%, #b4ad95 99.9%);
 }
 
 .end > div > .subheader {
@@ -90,7 +117,9 @@ footer > p {
   box-sizing: border-box;
 }
 body {
-  margin: 0;
+  margin: 0px;
+  padding: 0px;
+  overscroll-behavior: none;
 }
 
 main {
@@ -103,7 +132,7 @@ main {
 .header-gradient {
   height: 1000px;
   width: 100%;
-  background: linear-gradient(180deg, #3c3c3c 0%, #fff 100%);
+  background: linear-gradient(180deg, #b4ad95 0%, #fff 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -163,6 +192,10 @@ footer {
 }
 .footer-links > p {
   margin: 0px;
+}
+.footer-links > p:hover {
+  color: var(--bg-color);
+  cursor: pointer;
 }
 .social-links {
   display: flex;
@@ -248,5 +281,21 @@ footer {
   }
   .end > div > .subheader {
     font-size: 18px;
+  }
+  .placeholder-acc {
+    margin-left: 108px;
+    height: 500px;
+    width: 500px;
+  }
+  .engine-img {
+    margin-right: 108px;
+    height: 500px;
+    width: 500px;
+  }
+  .engine-info {
+    margin-right: 108px;
+  }
+  .logo {
+    width: 272px;
   }
 }
