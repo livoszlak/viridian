@@ -30,6 +30,7 @@
 }
 
 .call-to-action {
+  position: relative;
   margin-top: 275px;
 }
 
@@ -157,6 +158,59 @@ main {
   align-items: center;
   z-index: 3;
   gap: 8px;
+}
+
+.hidden {
+  display: none;
+  visibility: hidden;
+}
+
+.exit {
+  position: absolute;
+  top: 25px;
+  right: 24px;
+  height: 24px;
+  width: 24px;
+}
+
+.signup {
+  position: absolute;
+  z-index: 5;
+  bottom: 0;
+  background-color: var(--gradient-color);
+  color: var(--font-color);
+  margin-left: 24px;
+  margin-right: 24px;
+  height: 342px;
+}
+
+.signup-content {
+  display: flex;
+  position: relative;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding-top: 65px;
+  padding-right: 24px;
+  padding-left: 24px;
+}
+
+.email {
+  background-color: var(--gradient-color);
+  border: none;
+  width: 294px;
+  border-bottom: 1px solid var(--font-color);
+}
+
+.submit {
+  margin-top: 27px;
+  margin-left: 95px;
+}
+
+.email:focus,
+.email:active {
+  border-bottom: 1px solid var(--font-color);
+  outline: none;
 }
 
 .info {
@@ -297,5 +351,27 @@ footer {
   }
   .logo {
     width: 272px;
+  }
+  .exit {
+    top: 48px;
+    right: 48px;
+  }
+
+  .signup {
+    width: calc(100vw - 216px);
+    height: 560px;
+  }
+
+  .signup-content {
+    padding-top: 129px;
+  }
+
+  .email {
+    width: 400px;
+  }
+
+  .submit {
+    margin-top: 48px;
+    margin-left: 568px;
   }
 }
