@@ -2,6 +2,7 @@
   --bg-color: #ffffff;
   --font-color: #000000;
   --gradient-color: #b4ad95;
+  --pop-window: #dbd7cb;
   --btn-green: #b1ff97;
   --btn-orange: #d34323;
 }
@@ -71,6 +72,7 @@ button {
   background-color: var(--btn-orange);
   color: var(--bg-color);
   transition: all 400ms;
+  cursor: pointer;
 }
 .btn-orange {
   background-color: var(--btn-orange);
@@ -82,6 +84,7 @@ button {
   background-color: var(--btn-green);
   color: var(--font-color);
   transition: all 400ms;
+  cursor: pointer;
 }
 
 .bike-btn {
@@ -93,6 +96,35 @@ button {
 
 .acc-btn {
   margin-top: 24px;
+}
+
+.slide-arrow {
+  background-color: var(--pop-window);
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+}
+.slide-arrow:hover {
+  cursor: pointer;
+}
+
+.arrow-left {
+  left: 24px;
+}
+.arrow-right {
+  right: 24px;
+}
+
+.bike-in-environ {
+  position: absolute;
+  z-index: 1;
 }
 
 footer > p {
@@ -177,11 +209,13 @@ main {
   position: absolute;
   z-index: 5;
   bottom: 0;
+  left: -24px;
   background-color: var(--gradient-color);
   color: var(--font-color);
   margin-left: 24px;
   margin-right: 24px;
   height: 342px;
+  width: 100%;
 }
 
 .signup-content {
@@ -204,7 +238,6 @@ main {
 
 .submit {
   margin-top: 27px;
-  margin-left: 95px;
 }
 
 .email:focus,
@@ -271,11 +304,15 @@ footer {
 }
 
 .placeholder-bike {
-  height: 1000px;
+  height: 900px;
   width: 100vw;
   background-color: #747272;
   margin-top: 216px;
   position: relative;
+  object-fit: contain;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .placeholder-acc {
@@ -286,7 +323,7 @@ footer {
 }
 
 .placeholder-bike-xtra {
-  height: 1000px;
+  height: 900px;
   width: 100vw;
   background-color: #747272;
   margin-top: 395px;
@@ -365,6 +402,9 @@ footer {
   .signup-content {
     padding-top: 129px;
   }
+  .signup-content > p {
+    max-width: 400px;
+  }
 
   .email {
     width: 400px;
@@ -372,6 +412,19 @@ footer {
 
   .submit {
     margin-top: 48px;
-    margin-left: 568px;
+  }
+  .slide-arrow {
+    width: 48px;
+    height: 48px;
+  }
+
+  .slide-arrow > img {
+    scale: 1.7;
+  }
+  .arrow-left {
+    left: 108px;
+  }
+  .arrow-right {
+    right: 108px;
   }
 }
