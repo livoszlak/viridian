@@ -159,7 +159,9 @@ main {
   margin: 0px;
   padding: 0px;
   display: flex;
+  height: 100%;
   flex-direction: column;
+  position: relative;
 }
 
 .header-gradient {
@@ -195,6 +197,8 @@ main {
 .hidden {
   display: none;
   visibility: hidden;
+  height: 5px;
+  width: 5px;
 }
 
 .exit {
@@ -313,6 +317,11 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
+  overflow-x: hidden;
+}
+
+.bike-in-environ {
+  object-fit: contain;
 }
 
 .placeholder-acc {
@@ -340,6 +349,17 @@ footer {
   height: 300px;
   background-color: #747272;
   margin-top: 249px;
+}
+.to-top-wrapper {
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  bottom: 24px;
+  margin-left: 24px;
+  z-index: 25000;
+}
+
+.to-top {
 }
 
 @media screen and (min-width: 1000px) {
@@ -426,5 +446,8 @@ footer {
   }
   .arrow-right {
     right: 108px;
+  }
+  .to-top-wrapper {
+    margin-left: 108px;
   }
 }

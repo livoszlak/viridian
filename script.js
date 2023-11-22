@@ -23,3 +23,32 @@ const changeSlide = () => {
 
 arrowRight.addEventListener("click", changeSlide);
 arrowLeft.addEventListener("click", changeSlide);
+
+const toTop = document.getElementById("to-top-mobile");
+toTop.addEventListener("click", () => {
+  scrollTo({ top: 0, behavior: "smooth" });
+});
+
+let scrollPosition;
+
+const getWindowWidth = function () {
+  if (window.innerWidth > 1000) {
+    scrollPosition = 2000;
+    toTop.setAttribute("src", "./assets/to-top-web.svg");
+  } else {
+    scrollPosition = 2300;
+  }
+  return scrollPosition;
+};
+
+getWindowWidth();
+
+const toggleClassOnScroll = function () {
+  if (window.scrollY > scrollPosition) {
+    toTop.classList.remove("hidden");
+  } else {
+    toTop.classList.add("hidden");
+  }
+};
+
+window.onscroll = toggleClassOnScroll;
