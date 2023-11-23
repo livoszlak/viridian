@@ -20,6 +20,31 @@ document.getElementById("exit-popout").addEventListener("click", () => {
   popout.classList.add("hidden");
 });
 
+const langEn = document.querySelectorAll(".lang-en");
+const langSv = document.querySelectorAll(".lang-sv");
+
+langEn.forEach((item) => {
+  item.addEventListener("click", () => {
+    langSv.forEach((se) => {
+      se.classList.remove("underline");
+    });
+    langEn.forEach((en) => {
+      en.classList.add("underline");
+    });
+  });
+});
+
+langSv.forEach((item) => {
+  item.addEventListener("click", () => {
+    langEn.forEach((se) => {
+      se.classList.remove("underline");
+    });
+    langSv.forEach((en) => {
+      en.classList.add("underline");
+    });
+  });
+});
+
 const arrowRight = document.getElementById("slide-arrow-right");
 const arrowLeft = document.getElementById("slide-arrow-left");
 const bikeCity = document.getElementById("bike-city");

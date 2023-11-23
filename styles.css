@@ -223,8 +223,6 @@ main {
 .hidden {
   display: none;
   visibility: hidden;
-  height: 5px;
-  width: 5px;
 }
 
 .exit {
@@ -355,6 +353,7 @@ footer {
   width: 300px;
   background-color: #747272;
   margin-top: 227px;
+  overflow: hidden;
 }
 
 .placeholder-bike-xtra {
@@ -386,6 +385,36 @@ footer {
 }
 
 .to-top {
+}
+
+@keyframes slideshow {
+  0% {
+  }
+  33% {
+    transform: translateX(-500px);
+  }
+  66% {
+    transform: translateX(-1000px);
+  }
+  100% {
+    transform: translateX(-1500px);
+  }
+}
+
+.slideshow {
+  display: flex;
+  flex-direction: row;
+  animation: 7s slideshow infinite ease-in-out;
+  object-fit: cover;
+}
+
+.lang-selector {
+  display: flex;
+  flex-direction: row;
+  gap: 2px;
+}
+.underline {
+  text-decoration: underline;
 }
 
 @media screen and (min-width: 1000px) {
@@ -479,5 +508,14 @@ footer {
   }
   .to-top-wrapper {
     margin-left: 108px;
+  }
+  .desktop-menu {
+    display: flex;
+    flex-direction: column;
+    visibility: visible;
+  }
+  .mobile-menu {
+    display: none;
+    visibility: hidden;
   }
 }
