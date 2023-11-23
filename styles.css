@@ -175,7 +175,7 @@ main {
   gap: 513px;
 }
 
-.menu {
+.nav {
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -183,6 +183,32 @@ main {
   width: 100vw;
   padding-left: 24px;
   padding-right: 24px;
+}
+
+.nav-menu-wrapper {
+  position: relative;
+}
+.exit-popout-wrapper {
+}
+.exit-popout {
+  height: 24px;
+  width: 24px;
+}
+.menu-popout-items {
+}
+
+.menu-popout {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: var(--btn-orange);
+  color: var(--bg-color);
+  border-radius: 16px;
+  width: 160px;
+  height: 344px;
+  text-align: right;
 }
 
 .hero-text {
@@ -366,6 +392,10 @@ footer {
   .side-margin {
     margin-left: 108px;
     margin-right: 108px;
+  }
+  .nav {
+    padding-left: 108px;
+    padding-right: 108px;
   }
   .headline {
     font-size: 64px;

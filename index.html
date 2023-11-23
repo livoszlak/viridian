@@ -16,10 +16,40 @@
   <body>
     <main>
       <div class="header-gradient">
-        <div class="menu side-margin">
-          <img class="logo" src="assets/logo-phone.svg" alt="Logo" />
-          <img src="assets/menu.svg" alt="Menu" />
-        </div>
+        <nav class="nav side-margin">
+          <div class="nav-logo">
+            <img class="logo" src="assets/logo-phone.svg" alt="Logo" />
+          </div>
+          <div class="nav-menu-wrapper">
+            <div class="mobile-menu">
+              <img src="assets/menu.svg" id="burger" alt="Menu" />
+            </div>
+            <div class="menu-popout hidden">
+              <div class="menu-popout-items">
+                <p>COMMUNITY</p>
+                <p>PROTECH</p>
+                <p>NYHETSBREV</p>
+                <p><u>SV</u> - EN</p>
+                <p><img src="" />SÖK</p>
+              </div>
+              <div class="exit-popout-wrapper">
+                <img
+                  class="exit-popout"
+                  id="exit-popout"
+                  src="assets/x white.svg"
+                  alt="Exit"
+                />
+              </div>
+            </div>
+            <div class="desktop-menu hidden">
+              <p>COMMUNITY</p>
+              <p>PROTECH</p>
+              <p>NYHETSBREV</p>
+              <p><u>SV</u> - EN</p>
+              <p><img src="" />SÖK</p>
+            </div>
+          </div>
+        </nav>
         <div class="hero-text">
           <p class="headline">VI RULLAR FRAMÅT</p>
           <p class="subheader">mot en grönare framtid</p>

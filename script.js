@@ -9,6 +9,17 @@ document.getElementById("exit").addEventListener("click", () => {
   signup.classList.add("hidden");
 });
 
+const burger = document.getElementById("burger");
+const popout = document.querySelector(".menu-popout");
+
+burger.addEventListener("click", () => {
+  popout.classList.remove("hidden");
+});
+
+document.getElementById("exit-popout").addEventListener("click", () => {
+  popout.classList.add("hidden");
+});
+
 const arrowRight = document.getElementById("slide-arrow-right");
 const arrowLeft = document.getElementById("slide-arrow-left");
 const bikeCity = document.getElementById("bike-city");
