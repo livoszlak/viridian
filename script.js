@@ -64,6 +64,7 @@ const toTop = document.getElementById("to-top-mobile");
 toTop.addEventListener("click", () => {
   scrollTo({ top: 0, behavior: "smooth" });
 });
+const logo = document.getElementById("logo");
 
 let scrollPosition;
 
@@ -71,6 +72,7 @@ const getWindowWidth = function () {
   if (window.innerWidth > 1000) {
     scrollPosition = 2000;
     toTop.setAttribute("src", "./assets/to-top-web.svg");
+    logo.setAttribute("src", "./assets/full logo.svg");
   } else {
     scrollPosition = 2300;
   }

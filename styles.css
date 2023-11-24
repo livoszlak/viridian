@@ -47,7 +47,7 @@
 }
 
 .mycelium {
-  font-family: "IBM Plex", sans-serif;
+  font-family: "IBM Plex Sans", sans-serif;
   font-weight: 600;
   font-size: 16px;
   line-height: 23px;
@@ -127,7 +127,6 @@ button {
 }
 
 .slide-arrow {
-  background-color: var(--pop-window);
   width: 32px;
   height: 32px;
   border-radius: 50%;
@@ -145,9 +144,21 @@ button {
 
 .arrow-left {
   left: 24px;
+  background: url("./assets/slide arrows/arrow left.svg") no-repeat;
+  background-size: 100%;
+  &:hover {
+    background: url("./assets/slide arrows/arrow left hover.svg") no-repeat;
+    background-size: 100%;
+  }
 }
 .arrow-right {
   right: 24px;
+  background: url("./assets/slide arrows/arrow right.svg") no-repeat;
+  background-size: 100%;
+  &:hover {
+    background: url("./assets/slide arrows/arrow right hover.svg") no-repeat;
+    background-size: 100%;
+  }
 }
 
 .bike-in-environ {
@@ -167,11 +178,6 @@ footer > p {
   height: 500px;
   width: 100%;
   background: linear-gradient(180deg, #fff 2.55%, #b4ad95 99.9%);
-}
-
-.end > div > .subheader {
-  font-weight: 300;
-  font-size: 16px;
 }
 
 * {
@@ -220,12 +226,27 @@ main {
   position: relative;
 }
 .exit-popout-wrapper {
+  position: relative;
 }
 .exit-popout {
   height: 24px;
   width: 24px;
+  position: absolute;
+  top: 9px;
+  right: -20px;
 }
 .menu-popout-items {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 32px;
+  padding-top: 40px;
+}
+.search-wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 14px;
 }
 
 .menu-popout {
@@ -240,6 +261,7 @@ main {
   width: 160px;
   height: 344px;
   text-align: right;
+  padding-left: 32px;
 }
 
 .hero-text {
@@ -267,7 +289,7 @@ main {
 .signup {
   position: absolute;
   z-index: 5;
-  bottom: 0;
+  bottom: -75px;
   left: -24px;
   background-color: var(--gradient-color);
   color: var(--font-color);
@@ -340,18 +362,36 @@ main {
 
 footer {
   margin-top: 140px;
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 .links {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
 }
+.footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.footer-links > a:last-child {
+  margin-top: 34px;
+}
 .footer-links > p {
   margin: 0px;
 }
-.footer-links > p:hover {
-  color: var(--bg-color);
-  cursor: pointer;
+.end > .lang-selector > p {
+  margin: 0;
+  padding: 0;
+}
+.anchor {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
 }
 .social-links {
   display: flex;
@@ -360,10 +400,10 @@ footer {
 }
 .end {
   display: flex;
-  flex-direction: row;
-  align-items: baseline;
+  flex-direction: column;
+  align-items: flex-end;
   justify-content: space-between;
-  margin-top: 24px;
+  gap: 42px;
 }
 .newsletter {
   width: 342px;
@@ -466,6 +506,15 @@ footer {
   .nav {
     padding-left: 108px;
     padding-right: 108px;
+    align-items: flex-start;
+  }
+  .nav-logo {
+    position: relative;
+  }
+  .logo {
+    position: absolute;
+    left: 0;
+    top: -20px;
   }
   .headline {
     font-size: 64px;
@@ -525,7 +574,7 @@ footer {
     max-width: 500px;
   }
   .logo {
-    width: 272px;
+    width: 351px;
   }
   .exit {
     top: 48px;
@@ -570,9 +619,6 @@ footer {
     height: 48px;
   }
 
-  .slide-arrow > img {
-    scale: 1.7;
-  }
   .arrow-left {
     left: 108px;
   }
@@ -585,10 +631,31 @@ footer {
   .desktop-menu {
     display: flex;
     flex-direction: column;
+    align-items: flex-end;
     visibility: visible;
+    gap: 18px;
   }
   .mobile-menu {
     display: none;
     visibility: hidden;
+  }
+  .social-links > img {
+    width: 34px;
+    height: 34px;
+  }
+  footer {
+    margin-left: 92px;
+    margin-right: 92px;
+  }
+  .footer-links {
+    gap: 15px;
+  }
+  .end {
+    flex-direction: column-reverse;
+    gap: 130px;
+  }
+  .anchor {
+    font-size: 18px;
+    line-height: 25px;
   }
 }

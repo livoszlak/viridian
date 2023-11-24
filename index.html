@@ -18,7 +18,12 @@
       <div class="header-gradient">
         <nav class="nav side-margin">
           <div class="nav-logo">
-            <img class="logo" src="assets/logo-phone.svg" alt="Logo" />
+            <img
+              class="logo"
+              id="logo"
+              src="assets/logo-phone.svg"
+              alt="Logo"
+            />
           </div>
           <div class="nav-menu-wrapper">
             <div class="mobile-menu">
@@ -26,15 +31,18 @@
             </div>
             <div class="menu-popout hidden">
               <div class="menu-popout-items">
-                <p>COMMUNITY</p>
-                <p>PROTECH</p>
-                <p>NYHETSBREV</p>
+                <a class="anchor">COMMUNITY</a>
+                <a class="anchor">PROTECH</a>
+                <a class="anchor">NYHETSBREV</a>
                 <div class="lang-selector">
-                  <p class="lang-sv underline">SV</p>
-                  <p>-</p>
-                  <p class="lang-en">EN</p>
+                  <a class="lang-sv anchor underline">SV</a>
+                  <a>-</a>
+                  <a class="lang-en anchor">EN</a>
                 </div>
-                <p><img src="" />SÖK</p>
+                <div class="search-wrapper">
+                  <img src="./assets/search white.svg" />
+                  <a class="anchor">SÖK</a>
+                </div>
               </div>
               <div class="exit-popout-wrapper">
                 <img
@@ -46,15 +54,18 @@
               </div>
             </div>
             <div class="desktop-menu hidden">
-              <p>COMMUNITY</p>
-              <p>PROTECH</p>
-              <p>NYHETSBREV</p>
+              <a class="anchor">COMMUNITY</a>
+              <a class="anchor">PROTECH</a>
+              <a class="anchor">NYHETSBREV</a>
               <div class="lang-selector">
-                <p class="lang-sv underline">SV</p>
-                <p>-</p>
-                <p class="lang-en">EN</p>
+                <a class="lang-sv anchor underline">SV</a>
+                <a>-</a>
+                <a class="lang-en anchor">EN</a>
               </div>
-              <p><img src="" />SÖK</p>
+              <div class="search-wrapper">
+                <img src="./assets/search.svg" />
+                <a class="anchor">SÖK</a>
+              </div>
             </div>
           </div>
         </nav>
@@ -107,12 +118,8 @@
           src="./templates/template1.jpg"
           alt=""
         />
-        <div class="slide-arrow arrow-left hidden" id="slide-arrow-left">
-          <img src="./assets/arrow-left.svg" alt="" />
-        </div>
-        <div class="slide-arrow arrow-right" id="slide-arrow-right">
-          <img src="./assets/arrow-right.svg" alt="" />
-        </div>
+        <div class="slide-arrow arrow-left hidden" id="slide-arrow-left"></div>
+        <div class="slide-arrow arrow-right" id="slide-arrow-right"></div>
         <button class="bike-btn btn-green">CYKELN</button>
       </div>
       <div class="info-acc-wrapper">
@@ -180,23 +187,20 @@
         <footer>
           <div class="links side-margin">
             <div class="footer-links">
-              <p>Nyhetsbrev</p>
-              <p>Kontakt</p>
-              <p>FAQ</p>
-              <p>Om oss</p>
-              <p>Press</p>
-              <p><strong>Mycelium</strong> Technology</p>
-            </div>
-            <div class="social-links">
-              <img src="assets/meta.svg" alt="meta" />
-              <img src="assets/instagram.svg" alt="instagram" />
-              <img src="assets/linkedin.svg" alt="linkedin" />
+              <a class="anchor">Nyhetsbrev</a>
+              <a class="anchor">Kontakt</a>
+              <a class="anchor">FAQ</a>
+              <a class="anchor">Om oss</a>
+              <a class="anchor">Press</a>
+              <a class="anchor"><strong>Mycelium</strong> Technology</a>
+              <a class="subheader"><sup>&copy;</sup>PROTECH 2023</a>
             </div>
           </div>
           <div class="end side-margin">
-            <div>
-              <!-- <img src="copyright" alt=""> -->
-              <p class="subheader"><sup>&copy;</sup>PROTECH 2023</p>
+            <div class="social-links">
+              <img src="assets/facebook.svg" alt="meta" />
+              <img src="assets/instagram.svg" alt="instagram" />
+              <img src="assets/linkedin.svg" alt="linkedin" />
             </div>
             <div class="lang-selector">
               <p class="lang-sv underline">SV</p>
