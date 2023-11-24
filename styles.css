@@ -5,7 +5,9 @@
   --pop-window: #dbd7cb;
   --btn-green: #b1ff97;
   --btn-orange: #d34323;
+  --emerald: #074d53;
 }
+
 .side-margin {
   margin-left: 24px;
   margin-right: 24px;
@@ -28,6 +30,32 @@
   font-weight: 400;
   line-height: normal;
   margin: 0px;
+}
+
+.heading {
+  font-family: "Raleway", sans-serif;
+  font-size: 32px;
+  font-weight: 300;
+  text-transform: uppercase;
+  line-height: normal;
+}
+
+.brand {
+  font-family: "Raleway", sans-serif;
+  font-size: 16px;
+  font-weight: 300;
+}
+
+.mycelium {
+  font-family: "IBM Plex", sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 23px;
+
+  &:hover {
+    color: var(--emerald);
+    cursor: pointer;
+  }
 }
 
 .call-to-action {
@@ -184,7 +212,10 @@ main {
   padding-left: 24px;
   padding-right: 24px;
 }
-
+.lang-en:hover,
+.lang-sv:hover {
+  cursor: pointer;
+}
 .nav-menu-wrapper {
   position: relative;
 }
@@ -279,7 +310,12 @@ main {
 }
 
 .info > p {
-  max-width: 560px;
+  max-width: 590px;
+}
+
+.info-acc-wrapper {
+  display: flex;
+  flex-direction: column;
 }
 
 .engine {
@@ -289,16 +325,21 @@ main {
   margin-left: 90px;
 }
 
-.engine > p {
+.engine-info {
   max-width: 300px;
+  margin-right: 24px;
 }
 
 .about-us {
   margin-top: 309px;
 }
 
+.about-us-description {
+  max-width: 300px;
+}
+
 footer {
-  margin-top: 250px;
+  margin-top: 140px;
 }
 .links {
   display: flex;
@@ -367,13 +408,13 @@ footer {
   position: absolute;
   bottom: 42px;
   left: 24px;
-  width: 252px;
+  max-width: 252px;
 }
 .engine-img {
   width: 300px;
   height: 300px;
   background-color: #747272;
-  margin-top: 249px;
+  margin-top: 266px;
 }
 .to-top-wrapper {
   display: flex;
@@ -432,6 +473,15 @@ footer {
   .subheader {
     font-size: 18px;
   }
+  .heading {
+    font-size: 64px;
+  }
+  .mycelium {
+    font-size: 18px;
+  }
+  .brand {
+    font-size: 18px;
+  }
   p {
     font-size: 18px;
   }
@@ -457,13 +507,22 @@ footer {
     height: 500px;
     width: 500px;
   }
+  .engine {
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
   .engine-img {
     margin-right: 108px;
     height: 500px;
     width: 500px;
+    margin-top: 188px;
+  }
+  .engine-wrapper {
+    margin-bottom: 80px;
   }
   .engine-info {
     margin-right: 108px;
+    max-width: 500px;
   }
   .logo {
     width: 272px;
@@ -472,12 +531,22 @@ footer {
     top: 48px;
     right: 48px;
   }
-
+  .info-acc-wrapper {
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-top: 80px;
+    justify-content: space-between;
+  }
+  .about-us-description {
+    max-width: 570px;
+  }
   .signup {
     width: calc(100vw - 216px);
     height: 560px;
   }
-
+  .placeholder-bike-xtra {
+    margin-top: 290px;
+  }
   .signup-content {
     padding-top: 129px;
   }
@@ -491,6 +560,10 @@ footer {
 
   .submit {
     margin-top: 48px;
+  }
+
+  .blurb {
+    max-width: 370px;
   }
   .slide-arrow {
     width: 48px;

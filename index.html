@@ -7,7 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600&family=Raleway:wght@300;400&display=swap"
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600&family=Raleway:wght@300;400;600&display=swap"
       rel="stylesheet"
     />
     <title>Viridian</title>
@@ -66,13 +66,12 @@
       <div class="call-to-action side-margin">
         <p class="headline">FRAMTIDENS CYKEL</p>
         <p>
-          <span>VIRIDIAN</span>
-          <!-- <img src="trademark?" alt="">  -->
-          är organiskt, slitstarkt och 100% förnybart.
+          <span class="brand">VIRIDIAN&trade;</span> är organiskt, slitstarkt
+          och 100% förnybart.
         </p>
         <p>
           Hoppa upp på pakethållaren så håller vi dig uppdaterad om årets
-          kollektion 2024
+          kollektion 2024.
         </p>
         <button class="btn-orange" id="go-to-signup">ÅK MED</button>
         <div class="signup hidden">
@@ -82,7 +81,7 @@
               Anmäl dig till vårt nyhetsbrev för att vara först i kön till
               kollektionen! <br />
               <br />
-              Du får även 10 % rabatt på hela sortimentet vid din första order.
+              Du får även 10% rabatt på hela sortimentet vid din första order.
             </p>
             <input
               class="email"
@@ -115,53 +114,58 @@
           <img src="./assets/arrow-right.svg" alt="" />
         </div>
         <button class="bike-btn btn-green">CYKELN</button>
-        <!-- <img src="cykel" alt=""> button under skall ligga på bild -->
       </div>
-      <div class="info side-margin">
-        <p>
-          Vi tror på en framtid utan plast. Därför har vi tagit fram
-          <span>VIRIDIAN</span>
-          <!-- <img src="trademark?" alt="">  -->
-          som är tillverkat av 100% förnybar biomassa framtaget av
-          <strong>mycelium</strong>.
-        </p>
-        <p>
-          Ett revolutionerande material som minskar vårt klimatavtryck och banar
-          vägen för ett hållbart samhälle.
-        </p>
-      </div>
-      <div class="accessories">
-        <!-- <img src="tillbehör" alt=""> karusell med bilder som byts ut-->
-        <div class="placeholder-acc">
-          <div class="slideshow">
-            <img src="./templates/temp_slideshow1.jpg" alt="" />
-            <img src="./templates/temp_slideshow2.jpg" alt="" />
-            <img src="./templates/temp_slideshow3.jpg" alt="" />
-            <img src="./templates/temp_slideshow1.jpg" alt="" />
-          </div>
+      <div class="info-acc-wrapper">
+        <div class="info side-margin">
+          <p class="heading">PLASTFRI FRAMTID</p>
+          <p>
+            Vi tror på en framtid utan plast. Därför har vi tagit fram
+            <span class="brand">VIRIDIAN&trade;</span>
+            som är tillverkat av 100% förnybar biomassa framtaget av
+            <span class="mycelium">mycelium</span>.
+          </p>
+          <p>
+            Ett revolutionerande material som minskar vårt klimatavtryck och
+            banar vägen för ett hållbart samhälle.
+          </p>
         </div>
-        <button class="acc-btn side-margin btn-green">TILLBEHÖR</button>
+        <div class="accessories">
+          <div class="placeholder-acc">
+            <div class="slideshow">
+              <img src="./templates/temp_slideshow1.jpg" alt="" />
+              <img src="./templates/temp_slideshow2.jpg" alt="" />
+              <img src="./templates/temp_slideshow3.jpg" alt="" />
+              <img src="./templates/temp_slideshow1.jpg" alt="" />
+            </div>
+          </div>
+          <button class="acc-btn side-margin btn-green">TILLBEHÖR</button>
+        </div>
       </div>
       <div class="bike-xtra-everything">
-        <!-- <img src="bike-with-everything-attatched" alt=""> text under skall ligga på bild-->
         <div class="placeholder-bike-xtra">
-          <p class="blurb">
-            Ultralätt, sleek, matchande accessoarer, coolt, najs
-          </p>
+          <p class="blurb">Ultralätt och sleek design med en matt finish.</p>
         </div>
       </div>
       <div class="engine">
-        <!-- <img src="engine" alt=""> align right-->
         <div class="engine-img"></div>
-        <p class="engine-info">
-          Elmotor driven av elektrolys. Det är den nya cykeln som tar dig många
-          gröna mil.
-        </p>
+        <div class="engine-wrapper">
+          <p class="heading">FRAMTIDENS MOTOR</p>
+          <p class="engine-info">
+            Vår cykel levererar inte bara en smidig och kraftfull körupplevelse,
+            den representerar också framtidens teknik-
+            <strong>vätgasmotorer</strong>.<br />
+            <br />
+            Med en elmotor driven av elektrolysteknik minskar vi
+            koldioxidavtrycket och främjar en hållbar livsstil utan att
+            kompromissa med prestanda eller stil.
+          </p>
+        </div>
       </div>
       <div class="about-us side-margin">
         <button class="about-btn btn-orange">VÅR RESA</button>
         <p class="about-us-description">
-          En liten kort text om vår resa och varför du också bryr dig.
+          För oss är hållbarhet inte bara en trend, det är en livsstil. Vårt mål
+          är att åka långt och göra minsta möjliga avtryck.
         </p>
       </div>
       <div class="to-top-wrapper">
@@ -192,10 +196,12 @@
           <div class="end side-margin">
             <div>
               <!-- <img src="copyright" alt=""> -->
-              <p class="subheader">PROTECH 2023</p>
+              <p class="subheader"><sup>&copy;</sup>PROTECH 2023</p>
             </div>
-            <div class="lang-select">
-              <p><u>SV</u> - EN</p>
+            <div class="lang-selector">
+              <p class="lang-sv underline">SV</p>
+              <p>-</p>
+              <p class="lang-en">EN</p>
             </div>
           </div>
         </footer>
