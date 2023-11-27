@@ -49,6 +49,7 @@ const arrowRight = document.getElementById("slide-arrow-right");
 const arrowLeft = document.getElementById("slide-arrow-left");
 const bikeCity = document.getElementById("bike-city");
 const bikeForest = document.getElementById("bike-forest");
+const heroVideo = document.getElementById("hero-bike");
 
 const changeSlide = () => {
   arrowLeft.classList.toggle("hidden");
@@ -73,6 +74,11 @@ const getWindowWidth = function () {
     scrollPosition = 2000;
     toTop.setAttribute("src", "./assets/to-top-web.svg");
     logo.setAttribute("src", "./assets/full logo.svg");
+    bikeCity.setAttribute("src", "./assets/bike-images/City_Desktop.png");
+    bikeForest.setAttribute(
+      "src",
+      "./assets/bike-images/Countryside_Desktop.png"
+    );
   } else {
     scrollPosition = 2300;
   }
@@ -80,6 +86,40 @@ const getWindowWidth = function () {
 };
 
 getWindowWidth();
+
+const width = window.matchMedia("(min-width: 1000px)");
+const source = document.createElement("source");
+source.setAttribute("type", "video/mp4");
+heroVideo.appendChild(source);
+
+if (width.matches) {
+  heroVideo.pause();
+  source.removeAttribute("src");
+  source.setAttribute("src", "./assets/video/Hero_Turn_Desk_mp4.mp4");
+  heroVideo.load();
+  heroVideo.play();
+} else {
+  heroVideo.pause();
+  source.removeAttribute("src");
+  source.setAttribute("src", "./assets/video/Hero_Turn_Mobile_mp4.mp4");
+  heroVideo.load();
+  heroVideo.play();
+}
+/*
+const setAttribute = function () {
+  if (window.innerWidth > 1000) {
+    toTop.setAttribute("src", "./assets/to-top-web.svg");
+    logo.setAttribute("src", "./assets/full logo.svg");
+    bikeCity.setAttribute("src", "./assets/bike-images/City_Desktop.png");
+    bikeForest.setAttribute(
+      "src",
+      "./assets/bike-images/Countryside_Desktop.png"
+    );
+    heroVideo.setAttribute("src", "./assets/video/Hero_Turn_Desk_mp4.mp4");
+  }
+};
+
+setAttribute(); */
 
 const toggleClassOnScroll = function () {
   if (window.scrollY > scrollPosition) {

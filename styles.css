@@ -200,13 +200,19 @@ main {
 
 .header-gradient {
   height: 1000px;
-  width: 100%;
+  width: 100vw;
+  position: relative;
   background: linear-gradient(180deg, #b4ad95 0%, #fff 100%);
   display: flex;
   flex-direction: column;
   align-items: center;
   padding-top: 80px;
   gap: 513px;
+}
+
+.hero-bike {
+  position: absolute;
+  top: 0;
 }
 
 .nav {
@@ -217,6 +223,7 @@ main {
   width: 100vw;
   padding-left: 24px;
   padding-right: 24px;
+  z-index: 1;
 }
 .lang-en:hover,
 .lang-sv:hover {
