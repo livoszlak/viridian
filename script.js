@@ -179,7 +179,7 @@ if (width.matches) {
   heroVideo.play();
   detailsVideo.pause();
   detailsSource.removeAttribute("src");
-  detailsSource.setAttribute("src", "./assets/video/Details_Mobile.mp4");
+  detailsSource.setAttribute("src", "./assets/video/Details_Desktop.mp4");
   detailsVideo.load();
   detailsVideo.play();
 }

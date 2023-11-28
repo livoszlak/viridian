@@ -202,7 +202,7 @@ main {
   height: 1000px;
   width: 100vw;
   position: relative;
-  background: linear-gradient(180deg, #b4ad95 0%, #fff 100%);
+  background: linear-gradient(180deg, #cbc5b6 0%, #fff 93%);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -210,9 +210,15 @@ main {
   gap: 513px;
 }
 
+video {
+  opacity: 95%;
+}
 .hero-bike {
   position: absolute;
   top: 0;
+  width: 100vw;
+  object-fit: contain;
+  overflow: hidden;
 }
 
 .nav {
@@ -416,13 +422,13 @@ footer {
   width: 342px;
   height: 342px;
   flex-shrink: 0;
-  background: #d9d9d9;
+  background: var(--bg-color);
 }
 
 .placeholder-bike {
   height: 900px;
   width: 100vw;
-  background-color: #747272;
+  background-color: var(--bg-color);
   margin-top: 216px;
   position: relative;
   object-fit: contain;
@@ -450,13 +456,13 @@ footer {
   background-color: #747272;
   margin-top: 395px;
   position: relative;
+  overflow: hidden;
+  object-fit: cover;
+}
+.details-wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.details-wrapper {
-  overflow: hidden;
-  object-fit: cover;
 }
 
 .blurb {
