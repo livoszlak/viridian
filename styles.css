@@ -444,13 +444,21 @@ footer {
   overflow: hidden;
 }
 
-.placeholder-bike-xtra {
+.bike-details {
   height: 900px;
   width: 100vw;
   background-color: #747272;
   margin-top: 395px;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
+.details-wrapper {
+  overflow: hidden;
+  object-fit: cover;
+}
+
 .blurb {
   position: absolute;
   bottom: 42px;
@@ -478,21 +486,82 @@ footer {
 @keyframes slideshow {
   0% {
   }
-  33% {
-    transform: translateX(-500px);
+  9% {
+    transform: translateX(-300px);
   }
-  66% {
-    transform: translateX(-1000px);
+  18% {
+    transform: translateX(-600px);
+  }
+  27% {
+    transform: translateX(-900px);
+  }
+  36% {
+    transform: translateX(-1200px);
+  }
+  45% {
+    transform: translateX(-1500px);
+  }
+  54% {
+    transform: translateX(-1800px);
+  }
+  63% {
+    transform: translateX(-2100px);
+  }
+  72% {
+    transform: translateX(-2400px);
+  }
+  81% {
+    transform: translateX(-2700px);
+  }
+  90% {
+    transform: translateX(-3000px);
   }
   100% {
+    transform: translateX(-3300px);
+  }
+}
+@keyframes slideshow-web {
+  0% {
+  }
+  9% {
+    transform: translateX(-500px);
+  }
+  18% {
+    transform: translateX(-1000px);
+  }
+  27% {
     transform: translateX(-1500px);
+  }
+  36% {
+    transform: translateX(-2000px);
+  }
+  45% {
+    transform: translateX(-2500px);
+  }
+  54% {
+    transform: translateX(-3000px);
+  }
+  63% {
+    transform: translateX(-3500px);
+  }
+  72% {
+    transform: translateX(-4000px);
+  }
+  81% {
+    transform: translateX(-4500px);
+  }
+  90% {
+    transform: translateX(-5000px);
+  }
+  100% {
+    transform: translateX(-5500px);
   }
 }
 
 .slideshow {
   display: flex;
   flex-direction: row;
-  animation: 7s slideshow infinite ease-in-out;
+  animation: 12s slideshow infinite ease-in-out;
   object-fit: cover;
 }
 
@@ -600,7 +669,7 @@ footer {
     width: calc(100vw - 216px);
     height: 560px;
   }
-  .placeholder-bike-xtra {
+  .bike-details {
     margin-top: 290px;
   }
   .signup-content {
@@ -664,5 +733,8 @@ footer {
   .anchor {
     font-size: 18px;
     line-height: 25px;
+  }
+  .slideshow {
+    animation: 12s slideshow-web infinite ease-in-out;
   }
 }
