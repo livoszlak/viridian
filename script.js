@@ -134,7 +134,7 @@ let scrollPosition;
 const getWindowWidth = function () {
   if (window.innerWidth > 1000) {
     scrollPosition = 2000;
-    toTop.setAttribute("src", "./assets/to-top-web.svg");
+    //toTop.setAttribute("src", "./assets/to-top-web.svg");
     logo.setAttribute("src", "./assets/full logo.svg");
     bikeCity.setAttribute("src", "./assets/bike-images/City_Desktop.png");
     bikeForest.setAttribute(

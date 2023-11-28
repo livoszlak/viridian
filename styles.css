@@ -284,6 +284,8 @@ video {
   align-items: center;
   z-index: 3;
   gap: 8px;
+  position: absolute;
+  bottom: 0;
 }
 
 .hidden {
@@ -302,7 +304,7 @@ video {
 .signup {
   position: absolute;
   z-index: 5;
-  bottom: -75px;
+  bottom: -135px;
   left: -24px;
   background-color: var(--gradient-color);
   color: var(--font-color);
@@ -487,6 +489,12 @@ footer {
 }
 
 .to-top {
+  background: url("./assets/to-top-mobile.svg");
+  height: 32px;
+  width: 32px;
+  &:hover {
+    cursor: pointer;
+  }
 }
 
 @keyframes slideshow {
@@ -567,7 +575,7 @@ footer {
 .slideshow {
   display: flex;
   flex-direction: row;
-  animation: 12s slideshow infinite ease-in-out;
+  animation: 15s slideshow infinite ease-in-out;
   object-fit: cover;
 }
 
@@ -710,6 +718,14 @@ footer {
   .to-top-wrapper {
     margin-left: 108px;
   }
+  .to-top {
+    background: url("./assets/to-top-web.svg");
+    height: 48px;
+    width: 168px;
+    &:hover {
+      background: url("./assets/to-top-web-hover.svg");
+    }
+  }
   .desktop-menu {
     display: flex;
     flex-direction: column;
@@ -741,6 +757,6 @@ footer {
     line-height: 25px;
   }
   .slideshow {
-    animation: 12s slideshow-web infinite ease-in-out;
+    animation: 15s slideshow-web infinite ease-in-out;
   }
 }
