@@ -455,7 +455,7 @@ footer {
 .bike-details {
   height: 900px;
   width: 100vw;
-  background-color: #747272;
+  background-color: var(--bg-color);
   margin-top: 395px;
   position: relative;
   overflow: hidden;
